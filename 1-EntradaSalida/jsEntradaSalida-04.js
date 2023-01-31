@@ -9,8 +9,10 @@ function mostrar() {
 	//guardo en la variable nombre el texto que escribio el usuario dentro de la ventana promp
 	nombre = prompt("Ingrese su nombre");
 
-	//copio el nombre que tengo guardado en la variable nombre dento de la caja de texto embebida en la pagina html
+	//copio el nombre que tengo guardado en la variable nombre dento de la caja de texto embebida en la pagina html (el ID es donde el usuario ingresa info)
 	document.getElementById("txtIdNombre").value = nombre;
 
+	//Otra forma seria:
+	//txtIdNombre.value = nombre;
 
 } 

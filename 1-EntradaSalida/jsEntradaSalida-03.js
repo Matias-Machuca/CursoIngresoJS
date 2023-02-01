@@ -17,6 +17,6 @@ function mostrar() {
 	/*de esta manera el nombre ingresado se borra dejando vacio para proximo ingreso*/
 	//document.getElementById("txtIdNombre").value = "";
 
-
+		
 
 }

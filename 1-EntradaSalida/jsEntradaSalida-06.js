@@ -2,7 +2,15 @@
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resultado por medio de "ALERT"*/
+
+//TODO: PARSEAR EN UNA SEGUNDA LINEA DE CODIGO PARA EVITAR PROBLEMAS FUTUROS!!!
+
 function sumar() {
+
+	// siempre que haya una operacion matematica convertir usando parse
+
+	// NaN significa que el valor no es un numero!
+
 	let num1;
 
 	let num2;
@@ -17,7 +25,7 @@ function sumar() {
 	//una forma de hacerlo es en un linea
 	num1 = parseInt(document.getElementById("txtIdNumeroUno").value);
 
-	/*o bien pueden ser 2 lines de codigo con el mismo resultado:
+	/*o bien pueden ser 2 lineas de codigo con el mismo resultado:
 	num2 = document.getElementById("txtIdNumeroDos").value;
 	num2 = parseInt(num2);
 */

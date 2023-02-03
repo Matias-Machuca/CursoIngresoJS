@@ -14,9 +14,9 @@ let perimetro;
 
 largoDelTerreno = document.getElementById("txtIdLargo").value;
 
-anchoDelTerreno = document.getElementById("txtIdAncho").value;
-
 largoDelTerreno = parseFloat(largoDelTerreno);
+
+anchoDelTerreno = document.getElementById("txtIdAncho").value;
 
 anchoDelTerreno = parseFloat(anchoDelTerreno);
 
@@ -24,20 +24,61 @@ perimetro = largoDelTerreno * anchoDelTerreno * 3;
 
 alert("La cantidad de alambre necesaria es " + perimetro + " metros");
 
-
-
-
-
 }
+
+
+
 
 
 function Circulo () 
 {
-	
+	let radioDelTerreno;
+
+    let radioDeAlambre; 
+
+    radioDelTerreno = document.getElementById("txtIdRadio").value;
+
+    radioDelTerreno = parseFloat(radioDelTerreno);
+
+    radioDeAlambre = 2 * Math.PI * radioDelTerreno;
+
+    alert("La cantidad de alambre necesaria es: " + radioDeAlambre + " metros");
+
 }
 
 
 function Materiales () 
 {
-	
-}
+    let largoDelTerreno;
+    
+    let anchoDelTerreno;
+    
+    let bolsasDeCemento;
+
+    let bolsasDeCal;
+
+    let perimetro;
+    
+    largoDelTerreno = document.getElementById("txtIdLargo").value;
+    
+    largoDelTerreno = parseFloat(largoDelTerreno);
+    
+    anchoDelTerreno = document.getElementById("txtIdAncho").value;
+    
+    anchoDelTerreno = parseFloat(anchoDelTerreno);
+    
+    perimetro = largoDelTerreno * anchoDelTerreno;
+
+    bolsasDeCemento = perimetro * 2;
+
+    bolsasDeCal = perimetro * 3;
+
+    //mensaje con materiales por separado
+    alert("Se necesitan " + bolsasDeCemento + " bolsas de Cemento");
+    
+    alert("Se necesitan " + bolsasDeCal + " bolsas de Cal.");
+
+    //mensaje con materiales juntos
+    alert("Se necesitan " + bolsasDeCemento + " bolsas de Cemento y " + bolsasDeCal + " bolsas de Cal.");
+
+    }

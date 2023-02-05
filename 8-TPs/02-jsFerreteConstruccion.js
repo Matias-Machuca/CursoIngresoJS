@@ -20,7 +20,9 @@ anchoDelTerreno = document.getElementById("txtIdAncho").value;
 
 anchoDelTerreno = parseFloat(anchoDelTerreno);
 
-perimetro = largoDelTerreno * anchoDelTerreno * 3;
+perimetro = ((largoDelTerreno + anchoDelTerreno) * 2) * 3;
+
+perimetro = perimetro.toFixed(2);
 
 alert("La cantidad de alambre necesaria es " + perimetro + " metros");
 
@@ -34,15 +36,17 @@ function Circulo ()
 {
 	let radioDelTerreno;
 
-    let radioDeAlambre; 
+    let perimetro; 
 
     radioDelTerreno = document.getElementById("txtIdRadio").value;
 
     radioDelTerreno = parseFloat(radioDelTerreno);
 
-    radioDeAlambre = 2 * Math.PI * radioDelTerreno;
+    perimetro = 2 * Math.PI * radioDelTerreno;
 
-    alert("La cantidad de alambre necesaria es: " + radioDeAlambre + " metros");
+    perimetro = perimetro.toFixed(2) * 3;
+
+    alert("La cantidad de alambre necesaria es: " + perimetro + " metros");
 
 }
 

@@ -27,7 +27,9 @@ function Sumar ()
 
     suma = num1 + num2 + num3;
 
-    alert("La suma es: " + suma);
+    suma = suma.toFixed(2);
+
+    alert("La suma es $" + suma);
 
 }
 
@@ -56,7 +58,9 @@ function Promedio ()
 
     promedio = (num1 + num2 + num3) / 3;
 
-    alert("El promedio es: " + promedio);
+    promedio = promedio.toFixed(2);
+
+    alert("El promedio es $" + promedio);
 }
 
 
@@ -82,7 +86,9 @@ function PrecioFinal ()
 
     num3 = parseFloat(num3);
 
-    precioFinal = (num1 + num2 + num3) * 1.21 ;
+    precioFinal = (num1 + num2 + num3) * 1.21;
 
-    alert("El precio final es: " + precioFinal);
+    precioFinal = precioFinal.toFixed(2);
+
+    alert("El precio final es $" + precioFinal);
 }

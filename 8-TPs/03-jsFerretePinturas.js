@@ -25,7 +25,7 @@ function CentigradosFahrenheit ()
 
     let conversionFarenheit;
 
-    temperaturaEnCelcius = document.getElementById.apply("txtIdTemperatura").value;
+    temperaturaEnCelcius = document.getElementById("txtIdTemperatura").value;
 
     temperaturaEnCelcius = parseFloat(temperaturaEnCelcius);
 

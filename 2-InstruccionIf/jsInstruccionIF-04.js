@@ -5,7 +5,7 @@ function mostrar() {
 
 	edad = parseInt(edad);
 
-	if (edad >= 13 && edad <=17) {
+	if (edad >= 13 && edad <= 17) {
 
 		alert("Es adolescente");
 	}
@@ -20,6 +20,7 @@ function mostrar() {
 
 	//solucion alternativa con operador de negacion !
 	if( !(edad < 13 || edad > 17)) {
+		
 		alert("Es adolescente");
 	}
 			

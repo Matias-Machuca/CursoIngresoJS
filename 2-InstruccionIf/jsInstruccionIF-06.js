@@ -6,7 +6,7 @@ function mostrar() {
 	edad = parseInt(edad);
 
 	//Funcion original
-	/*if (edad < 13) {
+	if (edad < 13) {
 		alert("Es niño");
 	}
 	else {
@@ -16,9 +16,9 @@ function mostrar() {
 		else {
 			alert("Es adulto");
 		}
-	}*/
+	}
 
-	// Agregando una condicion (adulto)
+	// Agregando una condicion (adulto mayor)
 	/*if (edad < 13) {
 		alert("Es niño");
 	}
@@ -38,8 +38,8 @@ function mostrar() {
 
 
 	//Acomodando la funcion y utilizando else if para evitar el anidado
-	//
-	if (edad < 13) {
+	//OJO CON EL else if!
+	/*if (edad < 13) {
 		alert("Es niño");
 	}
 	else if (edad >= 13 && edad <= 17) {
@@ -51,5 +51,17 @@ function mostrar() {
 	else {
 		alert("Es anciano");
 	}
+*/
 
+	//otra alternativa 
+	/*if (edad > 17) {
+		alert("Es mayor de edad.");
+	} else {
+		if (edad > 12) {
+			alert("Es adolescente.");
+		}
+		else {
+			alert("Es niño.");
+		}
+	}*/
 }

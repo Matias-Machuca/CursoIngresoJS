@@ -14,6 +14,8 @@ function FahrenheitCentigrados ()
 
     conversionEnCelcius = (temperaturaFarenheit - 32) * 0.5556;
 
+    conversionEnCelcius = conversionEnCelcius.toFixed(2);
+
     alert(temperaturaFarenheit + " grados Farenheit son "+ conversionEnCelcius + " grados Celcius");
 
 }
@@ -30,6 +32,8 @@ function CentigradosFahrenheit ()
     temperaturaEnCelcius = parseFloat(temperaturaEnCelcius);
 
     conversionFarenheit = (temperaturaEnCelcius * 0.5556) + 32;
+
+    conversionFarenheit = conversionFarenheit.toFixed(2);
 
     alert(temperaturaEnCelcius + " grados Centígrados son " + conversionFarenheit + " grados Farenhiet");
 }

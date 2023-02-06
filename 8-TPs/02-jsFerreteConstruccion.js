@@ -61,7 +61,7 @@ function Materiales ()
 
     let bolsasDeCal;
 
-    let perimetro;
+    let area;
     
     largoDelTerreno = document.getElementById("txtIdLargo").value;
     
@@ -71,18 +71,22 @@ function Materiales ()
     
     anchoDelTerreno = parseFloat(anchoDelTerreno);
     
-    perimetro = largoDelTerreno * anchoDelTerreno;
+    area = largoDelTerreno * anchoDelTerreno;
 
-    bolsasDeCemento = perimetro * 2;
+    bolsasDeCemento = area * 2;
 
-    bolsasDeCal = perimetro * 3;
+    bolsasDeCal = area * 3;
 
-    //mensaje con materiales por separado
+    //alert con materiales por separado
     alert("Se necesitan " + bolsasDeCemento + " bolsas de Cemento");
     
     alert("Se necesitan " + bolsasDeCal + " bolsas de Cal.");
 
-    //mensaje con materiales juntos
+    //alert con materiales juntos
     alert("Se necesitan " + bolsasDeCemento + " bolsas de Cemento y " + bolsasDeCal + " bolsas de Cal.");
+
+    //alert usando template string
+    alert(`Para un contrapiso de ${area}m2 necesito comprar ${bolsasDeCemento} bolsas de Cemento y ${bolsasDeCal} bolsas de Cal.`);
+
 
     }

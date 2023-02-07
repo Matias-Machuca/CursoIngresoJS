@@ -9,7 +9,8 @@ function mostrar() {
 
 	edad = parseInt(edad);
 
-	if (edad < 18 && estadoCivil != "Soltero") {
+	if (edad < 18 && estadoCivil != "Soltero") 
+	{
 
 		alert("Es demasiado pequeño para no ser soltero");
 	}

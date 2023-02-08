@@ -8,17 +8,73 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
+function CalcularPrecio() 
 {
- 	let cantidadDeLamparas;
-    let marca;
-    let descuento;
     let precioLamparas = 35;
+    let cantidadDeLamparas;
+    let marca;
+    let precioFinal;
+    let descuento = 1;
+
     
-    cantidadDeLamparas = document.getElementById.apply("txtIdCantidad").value;
+    cantidadDeLamparas = document.getElementById("txtIdCantidad").value;
     cantidadDeLamparas = parseInt(cantidadDeLamparas);
 
     marca = document.getElementById("Marca").value;
+
     
+    if (cantidadDeLamparas > 5) 
+    {
+        descuento = 0.5;
+    } 
+    else 
+    {
+        if (cantidadDeLamparas == 5 && marca == "ArgentinaLuz") 
+        {
+           descuento = 0.4;
+        } 
+        else 
+        {
+            if (cantidadDeLamparas == 5) 
+            { 
+                descuento = 0.3;
+            } 
+            else
+            {
+                if (cantidadDeLamparas == 4 && (marca == "ArgentinaLuz" || marca == "FelipeLamparas"))
+                {
+                    descuento = 0.25;
+                } 
+                else 
+                {
+                    if (cantidadDeLamparas == 4) 
+                    {
+                        descuento = 0.2;
+                    }
+                    else 
+                    {
+                        if (cantidadDeLamparas == 3 && marca == "ArgentinaLuz") 
+                        {
+                            descuento = 0.15;
+                        } 
+                        else 
+                        {
+                            if (marca == "FelipeLamparas")
+                            {
+                                descuento = 0.1;
+                            } 
+                            else 
+                            {
+                                descuento = 0.05;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
     
+    precioFinal = cantidadDeLamparas * precioLamparas * descuento;
+
 }

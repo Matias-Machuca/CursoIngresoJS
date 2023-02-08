@@ -21,8 +21,14 @@ function mostrar()
 		{
 			alert("Es adulto");
 		}
-	}
+	} 
 
+
+
+
+
+
+	
 	// Agregando una condicion (adulto mayor)
 	/*if (edad < 13) {
 		alert("Es niño");

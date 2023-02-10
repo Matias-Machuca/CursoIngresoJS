@@ -73,7 +73,7 @@ function CalcularPrecio()
                             } 
                             if (cantidadDeLamparas < 3)
                             {
-                                descuento = 0
+                                descuento = 0;
                             }
                         }
                     }

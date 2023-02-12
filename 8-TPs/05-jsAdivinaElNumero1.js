@@ -5,22 +5,44 @@ secreto del 1 al 100, en la pantalla del juego
   ingresado es el mismo que el número secreto se dará 
   por terminado el juego con un mensaje similar a este: 
 “Usted es un ganador!!! y en solo X intentos”.
-de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  del número secreto.
+de no ser igual se debe informar si “falta…”  para llegar al número secreto  o si “se pasó…”  
+del número secreto.
 */
-var numeroSecreto; 
-var contadorIntentos;
 
-function comenzar()
+
+    let numeroSecreto;
+
+    
+function adivinaElNumero()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
+    
+    let numeroIngresado;
+    let minimo = 1;
+    let maximo = 100;
 
-}
+    numeroSecreto = numeroRandom = Math.round(Math.random() * (maximo - minimo) + minimo);
+    numeroSecreto = parseInt(numeroSecreto);  
 
-function verificar()
-{
-	
-	
+    numeroIngresado = document.getElementById("txtIdNumero").value;
+    numeroIngresado = parseInt(numeroIngresado);
+
+    
+    if (numeroIngresado == numeroSecreto) 
+    {
+      alert("Usted es el ganador!!!");
+    } 
+    else 
+    {
+      if (numeroIngresado > numeroSecreto) 
+      {
+        alert("El número es mas alto!");
+      } 
+      else 
+      {
+        if(numeroIngresado < numeroSecreto)
+        {
+          alert("El número es mas bajo!");
+        }
+      } 
+    }
 }

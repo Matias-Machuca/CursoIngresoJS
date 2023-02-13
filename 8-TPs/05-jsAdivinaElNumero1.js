@@ -10,7 +10,30 @@ del número secreto.
 */
 
 
-    let numeroSecreto;
+/*
+  Usar esta plantilla:
+
+var numeroSecreto; 
+var contadorIntentos;
+
+function comenzar()
+{
+    //Genero el número RANDOM entre 1 y 100
+     
+    
+
+}
+
+function verificar()
+{
+    
+    
+
+}
+*/
+
+
+var numeroSecreto;
 
     
 function adivinaElNumero()

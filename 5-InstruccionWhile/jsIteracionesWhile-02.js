@@ -10,6 +10,6 @@ function mostrar()
 
 		alert(condicion);
 
-		condicion-- // modificacion de la variable de control
+		condicion--; // modificacion de la variable de control
 	}
 }

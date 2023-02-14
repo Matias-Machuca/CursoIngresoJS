@@ -1,5 +1,7 @@
 /*
-al presionar el botón pedir la CLAVE (ayuda: es utn750)*/
+al presionar el botón pedir la CLAVE (ayuda: es utn750)
+*/
+
 function mostrar()
 {
 	let clave;
@@ -8,4 +10,6 @@ function mostrar()
 	while(clave != "utn750") {
 		clave = prompt("Clave incorrecta. Intente nuevamente.");
 	}
+
+	//alert("Estoy fuera del while. / Bienvenido");
 }

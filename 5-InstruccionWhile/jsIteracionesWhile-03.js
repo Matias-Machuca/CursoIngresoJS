@@ -11,5 +11,5 @@ function mostrar()
 		clave = prompt("Clave incorrecta. Intente nuevamente.");
 	}
 
-	//alert("Estoy fuera del while. / Bienvenido");
+	alert("Hola!");
 }

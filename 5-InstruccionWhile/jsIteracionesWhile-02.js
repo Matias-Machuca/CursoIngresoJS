@@ -2,14 +2,18 @@
 al presionar el botón mostrar 10 repeticiones 
 con números DESCENDENTES, desde el 10 al 1.*/
 function mostrar()
-{
-	let condicion; // declaro e1 inicializo la variable
+
+{	//Declaro e1 inicializo la variable.
+	let condicion; 
 	condicion = 10;
 
-	while(condicion >= 1) { // variable de control (condicion)
+	// Armo la variable de control (condicion).
+	while(condicion >= 1) { 
+	
+	//Muestro por alert la repetición solicitada por el enunciado.
+	alert(condicion);
 
-		alert(condicion);
-
-		condicion--; // modificacion de la variable de control
+    //Modifico de la variable de control para permitir que salga del bucle infinito.
+		condicion--; 
 	}
 }

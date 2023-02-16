@@ -9,6 +9,7 @@ function mostrar() {
 	let acumulador = 0;
 	let contador = 0;
 
+	//El DO WHILE sirve para cuando quiero que se ejecute por lo menos una vez.
 	do {
 		numeroIngresado = prompt("Ingrese un numero:");
 		numeroIngresado = parseInt(numeroIngresado);

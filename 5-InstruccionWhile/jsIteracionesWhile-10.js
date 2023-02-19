@@ -53,11 +53,16 @@ function mostrar() {
 	} while (seguir == "si");
 
 	//Calcular promedios con los datos ingresados en el bucle
-	promedioPositivos = acumuladorPosivitos / contadorPositivos;
-	promedioNegativos = acumuladorNegativos / contadorNegativos;
+	if (contadorPositivos > 0) {
+		promedioPositivos = acumuladorPosivitos / contadorPositivos;
+	}
+	if (contadorNegativos > 0) {
+		promedioNegativos = acumuladorNegativos / contadorNegativos;
+	}
+
+	//Calculo diferencia entre positivos y negativos
 	diferencia = contadorPositivos - contadorNegativos;
 
 	//Muestro los resultados
-
 	document.write("La suma de los negativos es: " + acumuladorNegativos);
 }

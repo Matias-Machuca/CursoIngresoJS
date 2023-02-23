@@ -52,7 +52,7 @@ function mostrar() {
 		seguir = prompt("¿Quiere ingresar un nuevo numero?");
 	} while (seguir == "si");
 
-	//Calcular promedios con los datos ingresados en el bucle
+	//Calculos con los datos ingresados en el bucle
 	if (contadorPositivos > 0) {
 		promedioPositivos = acumuladorPosivitos / contadorPositivos;
 	}
@@ -64,5 +64,5 @@ function mostrar() {
 	diferencia = contadorPositivos - contadorNegativos;
 
 	//Muestro los resultados
-	document.write("La suma de los negativos es: " + acumuladorNegativos);
+	document.write("La suma de los negativos es: " + acumuladorNegativos + " La suma de los positivos es: " + acumuladorPosivitos + " La cantidad de positivos es: " + contadorPositivos + " La cantidad de negativos es: " + contadorNegativos + " La cantidad de ceros es: " + contadorCeros + " La cantidad de numeros pares es: " + contadorPares + " El promedio de numeros positivos es: " + promedioPositivos + " El promedio de numeros negativos es: " + promedioNegativos + " La diferencia entre positivos y negativos es: " + diferencia);
 }
